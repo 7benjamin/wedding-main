@@ -101,7 +101,10 @@ const handleInput = async () => {
         }"
         :delay="500"
       >
-        <template v-if="identity">
+      <div class="px-3 py-1 mx-auto rounded-full bg-white w-fit text-center">
+            <button @click="emits('open')" class="text-black font-content">Buka Undangan</button>
+          </div>
+        <!-- <template v-if="identity">
           <div class="text-white text-center mb-4 font-content">
             <div class="text-md">teruntuk,</div>
             <div class="text-lg">{{ identity?.name }}</div>
@@ -127,7 +130,7 @@ const handleInput = async () => {
               {{ inputOpen ? 'Buka Undangan' : 'Masukkan Kode Undangan' }}
             </button>
           </div>
-        </template>
+        </template> -->
       </div>
     </div>
   </BaseLayout>
